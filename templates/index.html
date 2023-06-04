@@ -1,0 +1,109 @@
+<!--<html>   #temp code only
+    <head>
+        <title>p<->d</title>
+    </head>
+    <body>
+        
+        <form method="post" enctype="multipart/form-data">
+        <input type="file" id="f1" name="f1">
+        <input type="submit" id="s1">
+        </form>
+        
+    </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Document Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-input-label {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .file-input-label:hover {
+            background-color: #45a049;
+        }
+
+        .convert-btn {
+            display: block;
+            padding: 10px 15px;
+            background-color: #008CBA;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .convert-btn:hover {
+            background-color: #007ea7;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF to Document Converter</h1>
+        <form id="pdfToDocForm" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="f1">Choose a PDF file:</label>
+                <input type="file" id="f1" accept="application/pdf" name="f1">
+                <label for="f1" class="file-input-label">Select File</label>
+            </div>
+            <button type="submit" class="convert-btn">Convert to Document</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+   
+</body>
+</html>
